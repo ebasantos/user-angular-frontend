@@ -1,0 +1,24 @@
+<form class="container" #user="ngForm" (ngSubmit)="onSubmit(user)">
+  <div class="form-group col 12">
+    <label>Nome</label>
+    <input  class="form-control" name="nome"  ngModel >
+  </div>
+  <div class="form-group col 12">
+    <label>Email</label>
+    <input type="email" class="form-control" name="email" ngModel >
+  </div>
+  <div class="form-group col 12">
+    <label>Senha</label>
+    <input type="" class="form-control" name="senha" ngModel >
+  </div>
+  <div class="form-group col 12">
+    <label>N° do prefil de usuários</label>
+    <input type="number" class="form-control" name="idProfile" ngModel >
+  </div>
+  <div class="row">
+    <div class="col">
+      <button type="submit" class="btn">Submit</button>
+   </div>
+   
+  </div>
+</form>

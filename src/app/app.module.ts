@@ -1,16 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { HomeComponent } from './home/home.component';
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { UsersGetComponent } from './users-get/users-get.component';
+import { UsersPostComponent } from './users-post/users-post.component';
+import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from "@angular/forms";
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    NotFoundPageComponent,
+    UsersGetComponent,
+    UsersPostComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
