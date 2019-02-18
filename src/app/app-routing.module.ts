@@ -4,10 +4,12 @@ import {  HomeComponent } from "./home/home.component";
 import { NotFoundPageComponent } from "./not-found-page/not-found-page.component";
 import {  UsersGetComponent } from "./users-get/users-get.component";
 import {  UsersPostComponent } from "./users-post/users-post.component";
+import { ProfileGetComponent } from './Profile/profile-get/profile-get.component';
 
 const routes: Routes =[
   {path: 'user/new', component : UsersPostComponent},
   {path: 'user', component : UsersGetComponent},
+  {path: 'profile', component : ProfileGetComponent},
   {path: '', component : HomeComponent},
   {path: '**', component : NotFoundPageComponent}
 ];

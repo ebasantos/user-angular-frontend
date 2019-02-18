@@ -1,0 +1,18 @@
+<div class="container">
+  <table class="table">
+    <thead class="thead-dark"> 
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Código</th>
+        <th scope="col">Nome</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let profile of p">
+      <tr>
+        <th scope="row">*</th>
+        <td>{{profile.idProfile}}</td>
+        <td>{{profile.nome}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
